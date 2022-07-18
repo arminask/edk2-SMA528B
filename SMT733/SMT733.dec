@@ -12,7 +12,7 @@
 
 [Defines]
   DEC_SPECIFICATION              = 0x0001001a
-  PACKAGE_NAME                   = SMT733
+  PACKAGE_NAME                   = SM-A528B
   PACKAGE_GUID                   = 8eb62855-b263-42f4-9256-3848a1393da4
   PACKAGE_VERSION                = 0.1
 
@@ -37,6 +37,6 @@
 [PcdsFixedAtBuild.common]
   # Simple FrameBuffer
   gSMT733TokenSpaceGuid.PcdMipiFrameBufferAddress|0x00400000|UINT32|0x0000a400
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth|1600|UINT32|0x0000a401
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight|2560|UINT32|0x0000a402
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
+  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight|2400|UINT32|0x0000a402
   gSMT733TokenSpaceGuid.PcdMipiFrameBufferPixelBpp|32|UINT32|0x0000a403
