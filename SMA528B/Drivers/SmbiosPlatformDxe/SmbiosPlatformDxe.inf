@@ -37,7 +37,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  SMT733/SMT733.dec
+  SMA528B/SMA528B.dec
 
 [LibraryClasses]
   ArmLib

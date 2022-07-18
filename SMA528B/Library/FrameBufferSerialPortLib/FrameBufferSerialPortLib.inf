@@ -11,7 +11,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   ArmPkg/ArmPkg.dec
-  SMT733/SMT733.dec
+  SMA528B/SMA528B.dec
 
 [LibraryClasses]
   ArmLib
@@ -22,7 +22,7 @@
   CacheMaintenanceLib
 
 [Pcd]
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferAddress
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferPixelBpp

@@ -12,7 +12,7 @@
 
 [Defines]
   INF_VERSION                    = 0x00010019
-  BASE_NAME                      = SMT733Lib
+  BASE_NAME                      = SMA528BLib
   FILE_GUID                      = f1582daa-ed2f-43a7-b0a7-5660ff468edd
   MODULE_TYPE                    = BASE
   VERSION_STRING                 = 1.0
@@ -24,7 +24,7 @@
   EmbeddedPkg/EmbeddedPkg.dec
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  SMT733/SMT733.dec
+  SMA528B/SMA528B.dec
 
 [LibraryClasses]
   ArmLib
@@ -34,9 +34,9 @@
   SerialPortLib
 
 [Sources.common]
-  SMT733.c
-  SMT733Helper.S
-  SMT733Mem.c
+  SMA528B.c
+  SMA528BHelper.S
+  SMA528BMem.c
 
 [FixedPcd]
   gArmTokenSpaceGuid.PcdArmPrimaryCore

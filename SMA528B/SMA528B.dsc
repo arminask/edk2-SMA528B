@@ -10,11 +10,11 @@
 #  WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED.
 #
 
-!include SMT733/CommonDsc.dsc.inc
+!include SMA528B/CommonDsc.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
-  ArmPlatformLib|SMT733/Library/SMT733Lib/SMT733Lib.inf
+  ArmPlatformLib|SMA528B/Library/SMA528BLib/SMA528BLib.inf
   CompilerIntrinsicsLib|ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
@@ -27,7 +27,7 @@
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   BootLogoLib|MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf
 
-  SerialPortLib|SMT733/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
+  SerialPortLib|SMA528B/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
   RealTimeClockLib|EmbeddedPkg/Library/VirtualRealTimeClockLib/VirtualRealTimeClockLib.inf
   TimeBaseLib|EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
 
@@ -46,10 +46,10 @@
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
 
-  SerialPortLib|SMT733/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
-  PlatformBootManagerLib|SMT733/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
-  MemoryInitPeiLib|SMT733/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
-  PlatformPeiLib|SMT733/Library/PlatformPeiLib/PlatformPeiLib.inf
+  SerialPortLib|SMA528B/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+  PlatformBootManagerLib|SMA528B/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+  MemoryInitPeiLib|SMA528B/Library/MemoryInitPeiLib/PeiMemoryAllocationLib.inf
+  PlatformPeiLib|SMA528B/Library/PlatformPeiLib/PlatformPeiLib.inf
 
 [LibraryClasses.common.SEC]
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -127,9 +127,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferAddress|0xE1000000
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth|1600
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight|2560
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferAddress|0xE1000000
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferWidth|1600
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferHeight|2560
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -189,8 +189,8 @@
   #
   EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
-  SMT733/SMT733Dxe/SMT733Dxe.inf
-  SMT733/SimpleFbDxe/SimpleFbDxe.inf
+  SMA528B/SMA528BDxe/SMA528BDxe.inf
+  SMA528B/SimpleFbDxe/SimpleFbDxe.inf
 
   #
   # USB Host Support
@@ -235,12 +235,12 @@
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-  SMT733/AcpiTables/AcpiTables.inf
+  SMA528B/AcpiTables/AcpiTables.inf
 
   #
   # SMBIOS Support
   #
-  SMT733/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  SMA528B/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
 
   #
@@ -263,7 +263,7 @@
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
-  SMT733/Drivers/LogoDxe/LogoDxe.inf
+  SMA528B/Drivers/LogoDxe/LogoDxe.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>

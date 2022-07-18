@@ -12,7 +12,7 @@
 *
 **/
 
-#ifndef __SMT733DXE_H__
-#define __SMT733DXE_H__
+#ifndef __SMA528BDXE_H__
+#define __SMA528BDXE_H__
 
-#endif /* __SMT733DXE_H__ */
+#endif /* __SMA528BDXE_H__ */

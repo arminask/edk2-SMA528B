@@ -7,9 +7,9 @@
   SUPPORTED_ARCHITECTURES        = AARCH64
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = SMT733/SMT733.fdf
+  FLASH_DEFINITION               = SMA528B/SMA528B.fdf
 
-!include SMT733/SMT733.dsc
+!include SMA528B/SMA528B.dsc
 
 [PcdsFixedAtBuild.common]
   # System Memory (6GB)

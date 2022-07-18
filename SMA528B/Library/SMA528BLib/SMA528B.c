@@ -19,7 +19,7 @@
 
 #include <Ppi/ArmMpCoreInfo.h>
 
-ARM_CORE_INFO mSMT733InfoTable[] = {
+ARM_CORE_INFO mSMA528BInfoTable[] = {
   {
     // Cluster 0, Core 0
     0x0, 0x0,
@@ -116,8 +116,8 @@ PrePeiCoreGetMpCoreInfo (
   )
 {
   // Only support one cluster
-  *CoreCount    = sizeof(mSMT733InfoTable) / sizeof(ARM_CORE_INFO);
-  *ArmCoreTable = mSMT733InfoTable;
+  *CoreCount    = sizeof(mSMA528BInfoTable) / sizeof(ARM_CORE_INFO);
+  *ArmCoreTable = mSMA528BInfoTable;
   return EFI_SUCCESS;
 }
 

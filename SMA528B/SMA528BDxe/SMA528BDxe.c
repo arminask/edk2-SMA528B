@@ -34,7 +34,7 @@
 #include <Protocol/LoadedImage.h>
 #include <Protocol/PlatformBootManager.h>
 
-#include "SMT733Dxe.h"
+#include "SMA528BDxe.h"
 
 EFI_CPU_ARCH_PROTOCOL     *gCpu;
 
@@ -70,7 +70,7 @@ OnEndOfDxe (
 
 EFI_STATUS
 EFIAPI
-SMT733EntryPoint (
+SMA528BEntryPoint (
   IN EFI_HANDLE         ImageHandle,
   IN EFI_SYSTEM_TABLE   *SystemTable
   )

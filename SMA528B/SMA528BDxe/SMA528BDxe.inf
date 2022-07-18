@@ -12,14 +12,14 @@
 
 [Defines]
   INF_VERSION                    = 0x0001001a
-  BASE_NAME                      = SMT733Dxe
+  BASE_NAME                      = SMA528BDxe
   FILE_GUID                      = 5a172c8d-026f-4366-bf20-af2df1194a28
   MODULE_TYPE                    = DXE_DRIVER
   VERSION_STRING                 = 1.0
-  ENTRY_POINT                    = SMT733EntryPoint
+  ENTRY_POINT                    = SMA528BEntryPoint
 
 [Sources.common]
-  SMT733Dxe.c
+  SMA528BDxe.c
 
 [Packages]
   EmbeddedPkg/EmbeddedPkg.dec

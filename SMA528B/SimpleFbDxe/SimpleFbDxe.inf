@@ -16,7 +16,7 @@
   MdeModulePkg/MdeModulePkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
-  SMT733/SMT733.dec
+  SMA528B/SMA528B.dec
 
 [LibraryClasses]
   BaseLib
@@ -36,9 +36,9 @@
   gEfiCpuArchProtocolGuid
 
 [FixedPcd]
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferAddress
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferWidth
-  gSMT733TokenSpaceGuid.PcdMipiFrameBufferHeight
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferHeight
 
 [Guids]
   gEfiMdeModulePkgTokenSpaceGuid
