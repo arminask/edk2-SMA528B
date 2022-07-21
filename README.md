@@ -1,6 +1,6 @@
 EDK2 for Samsung Galaxy A52s 5G.
 
-Forked from: https://github.com/gezine/edk2-sma528b
+Forked from: https://github.com/gezine/edk2-smt733
 
 ## Working
 
