@@ -1,6 +1,6 @@
-EDK2 for Samsung Galaxy Tab S7 FE wifi model. (Snapdragon 778G aka SM7325)
+EDK2 for Samsung Galaxy A52s 5G.
 
-Based on map220v's commits for Galaxy A72 - https://github.com/map220v/edk2-a72q
+Forked from: https://github.com/gezine/edk2-sma528b
 
 ## Working
 
@@ -23,15 +23,7 @@ ACPI
 etc...
 
 
-## WARNING
-
-DO NOT USE THIS ON LTE OR 5G MODELS (Snapdragon 750G)
-
-
-This EDK2 is targeted for Galaxy Tab S7 FE wifi 6G RAM model
-
 For 4G and 8G RAM models you might need to change some values
-
 
 ## Building
 
