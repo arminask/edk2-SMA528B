@@ -42,11 +42,11 @@ cd edk2-SMA528B
 ```
 Build
 ```
-./build_DEBUG.sh
+./build_debug.sh
 ```
 Flash
 ```
-heimdall flash --BOOT boot-SMA528B_DEBUG.img
+heimdall flash --BOOT boot-SMA528B_debug.img
 ```
 
 # Credits
