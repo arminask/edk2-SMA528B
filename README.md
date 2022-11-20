@@ -1,7 +1,5 @@
 EDK2 for Samsung Galaxy A52s 5G.
 
-Forked from: https://github.com/gezine/edk2-smt733
-
 ## Working
 
 Display
@@ -34,7 +32,7 @@ Ubuntu 20.04 (x86)
 
 Setup
 ```
-git clone https://github.com/Gezine/edk2-SMA528B
+git clone https://github.com/arminask/edk2-SMA528B
 git clone https://github.com/tianocore/edk2.git --recursive --depth 1
 sudo apt install build-essential uuid-dev iasl git nasm python3-distutils gcc-aarch64-linux-gnu abootimg
 cd edk2-SMA528B
