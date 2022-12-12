@@ -14,6 +14,16 @@
 [PcdsFixedAtBuild.common]
   # System Memory (6GB)
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x180000000
+  # Screen Resolution
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferWidth|1080|UINT32|0x0000a401
+  gSMA528BTokenSpaceGuid.PcdMipiFrameBufferHeight|2400|UINT32|0x0000a402
+
+  # Simple Init
+  gSimpleInitTokenSpaceGuid.PcdGuiDefaultDPI|407
+
+  gRenegadePkgTokenSpaceGuid.PcdDeviceVendor|"Samsung"
+  gRenegadePkgTokenSpaceGuid.PcdDeviceProduct|"Galaxy A52s 5G"
+  gRenegadePkgTokenSpaceGuid.PcdDeviceCodeName|"a52sxq"
 
 [LibraryClasses]
   VariableFlashInfoLib|MdeModulePkg/Library/BaseVariableFlashInfoLib/BaseVariableFlashInfoLib.inf
