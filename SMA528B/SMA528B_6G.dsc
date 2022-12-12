@@ -14,3 +14,6 @@
 [PcdsFixedAtBuild.common]
   # System Memory (6GB)
   gArmTokenSpaceGuid.PcdSystemMemorySize|0x180000000
+
+[LibraryClasses]
+  VariableFlashInfoLib|MdeModulePkg/Library/BaseVariableFlashInfoLib/BaseVariableFlashInfoLib.inf
