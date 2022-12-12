@@ -27,7 +27,7 @@ For 4G and 8G RAM models you might need to change some values
 
 Tested on:
 
-Ubuntu 20.04 (x86)
+Ubuntu 22.04.1 LTS (x86)
 
 
 Setup
@@ -36,17 +36,23 @@ git clone https://github.com/arminask/edk2-SMA528B
 git clone https://github.com/tianocore/edk2.git --recursive --depth 1
 sudo apt install build-essential uuid-dev iasl git nasm python3-distutils gcc-aarch64-linux-gnu abootimg
 cd edk2-SMA528B
+chmod +x firstrun.sh
 ./firstrun.sh
 ```
 Build
 ```
+chmod +x build_debug.sh
 ./build_debug.sh
 ```
-Flash
+Flash with heimdall
 ```
 heimdall flash --BOOT boot-SMA528B_debug.img
 ```
 
+Flash with fastboot:
+```
+fastboot flash boot boot-SMA528B_debug.img
+```
 # Credits
 
 SimpleFbDxe screen driver is from imbushuo's [Lumia950XLPkg](https://github.com/WOA-Project/Lumia950XLPkg).
