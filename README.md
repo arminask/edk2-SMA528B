@@ -49,7 +49,7 @@ Flash with heimdall
 heimdall flash --BOOT boot-SMA528B_debug.img
 ```
 
-Flash with fastboot:
+Flash with FastbootD:
 ```
 fastboot flash boot boot-SMA528B_debug.img
 ```
