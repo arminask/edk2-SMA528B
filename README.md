@@ -1,4 +1,4 @@
-EDK2 for Samsung Galaxy A52s 5G.
+# EDK2 UEFI firmware for Samsung Galaxy A52s 5G
 
 ## Working
 
@@ -53,7 +53,10 @@ Flash with FastbootD:
 ```
 fastboot flash boot boot-SMA528B_debug.img
 ```
+
 # Credits
+
+SoC port from Gezine [edk2-SMT733](https://github.com/Gezine/edk2-SMT733)
 
 SimpleFbDxe screen driver is from imbushuo's [Lumia950XLPkg](https://github.com/WOA-Project/Lumia950XLPkg).
 
