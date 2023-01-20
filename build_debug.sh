@@ -4,8 +4,8 @@ mkdir workspace
 set -e
 . build_common.sh
 # not actually GCC5; it's GCC7 on Ubuntu 18.04.
-GCC5_AARCH64_PREFIX=aarch64-linux-gnu- build -s -n 0 -a AARCH64 -t GCC5 -p SMA528B/SMA528B_6G.dsc
-gzip -c < workspace/Build/SMA528B/DEBUG_GCC5/FV/SMA528B_UEFI.fd >uefi.img
-cat SMA528B.dtb >>uefi.img
+GCC5_AARCH64_PREFIX=aarch64-linux-gnu- build -s -n 0 -a AARCH64 -t GCC5 -p a52sxq/a52sxq_6G.dsc
+gzip -c < workspace/Build/a52sxq/DEBUG_GCC5/FV/A52SXQ_UEFI.fd >uefi.img
+cat a52sxq.dtb >>uefi.img
 echo > ramdisk
-abootimg --create boot-SMA528B_DEBUG.img -k uefi.img -r ramdisk
+abootimg --create boot-a52sxq_DEBUG.img -k uefi.img -r ramdisk

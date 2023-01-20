@@ -32,10 +32,10 @@ Ubuntu 22.04.1 LTS (x86)
 
 Setup
 ```
-git clone https://github.com/arminask/edk2-SMA528B
+git clone https://github.com/arminask/edk2-a52sxq
 git clone https://github.com/tianocore/edk2.git --recursive --depth 1
 sudo apt install build-essential uuid-dev iasl git nasm python3-distutils gcc-aarch64-linux-gnu abootimg
-cd edk2-SMA528B
+cd edk2-a52sxq
 chmod +x firstrun.sh
 ./firstrun.sh
 ```
@@ -46,12 +46,12 @@ chmod +x build_debug.sh
 ```
 Flash with heimdall
 ```
-heimdall flash --BOOT boot-SMA528B_debug.img
+heimdall flash --BOOT boot-a52sxq_debug.img
 ```
 
 Flash with FastbootD:
 ```
-fastboot flash boot boot-SMA528B_debug.img
+fastboot flash boot boot-a52sxq_debug.img
 ```
 
 # Credits
