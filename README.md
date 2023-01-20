@@ -32,10 +32,10 @@ Ubuntu 22.04.1 LTS (x86)
 
 Setup
 ```
-git clone https://github.com/arminask/edk2-a52sxq
+git clone https://github.com/arminask/old-edk2-a52sxq
 git clone https://github.com/tianocore/edk2.git --recursive --depth 1
 sudo apt install build-essential uuid-dev iasl git nasm python3-distutils gcc-aarch64-linux-gnu abootimg
-cd edk2-a52sxq
+cd old-edk2-a52sxq
 chmod +x firstrun.sh
 ./firstrun.sh
 ```
